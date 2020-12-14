@@ -25,6 +25,7 @@ use EasyWeChat\OpenPlatform\Authorizer\Aggregate\AggregateServiceProvider;
  * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Setting\Client $setting
  * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Tester\Client  $tester
  * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\QrcodeRules\Client  $qrcodeRules
+ * @property \EasyWeChat\OpenPlatform\Authorizer\MiniProgram\Plugin\Client  $plugin
  */
 class Application extends MiniProgram
 {
@@ -43,6 +44,7 @@ class Application extends MiniProgram
             Setting\ServiceProvider::class,
             Tester\ServiceProvider::class,
             QrcodeRules\ServiceProvider::class,          // 2020-11-20 16:24 scientistpun 新添加
+            Plugin\ServiceProvider::class,          // 2020-12-14 16:24 scientistpun 新添加
         ];
 
         foreach ($providers as $provider) {
