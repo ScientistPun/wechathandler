@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the overtrue/wechat.
+ * This file is part of the scientistpun/wechathandle
  *
  * (c) overtrue <i@overtrue.me>
  *
@@ -34,18 +34,15 @@ class Client extends BaseClient
     /**
      * 设置小程序业务域名.
      *
-     * @param string $action
+     * @param string $params
      *
      * @return array|\EasyWeChat\Kernel\Support\Collection|object|\Psr\Http\Message\ResponseInterface|string
      *
      * @throws \EasyWeChat\Kernel\Exceptions\InvalidConfigException
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function setWebviewDomain(array $domains, $action = 'add')
+    public function setWebviewDomain(array $params)
     {
-        return $this->httpPostJson('wxa/setwebviewdomain', [
-            'action' => $action,
-            'webviewdomain' => $domains,
-        ]);
+        return $this->httpPostJson('wxa/setwebviewdomain', $params);
     }
 }
