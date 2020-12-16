@@ -15,6 +15,7 @@ use EasyWeChat\Kernel\BaseClient;
  * Class Client.
  * 二维码有关的设置
  *
+ * @link https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Mini_Programs/qrcode/qrcode.html
  * @author scientistpun <honynero@sina.cn>
  */
 class Client extends BaseClient

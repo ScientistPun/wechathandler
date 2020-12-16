@@ -15,8 +15,10 @@ use EasyWeChat\Kernel\BaseClient;
 
 /**
  * Class Client.
- *
- * @author mingyoung <mingyoungcheung@gmail.com>
+ * 插件管理有关的设置
+ * 
+ * @link https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Mini_Programs/Plug-ins_Management.html
+ * @author scientistpun <honynero@sina.cn>
  */
 class Client extends BaseClient
 {
